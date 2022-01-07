@@ -1,0 +1,1 @@
+A JavaFX FileChooser class (javafx.stage.FileChooser) is a dialog that enables the user to select one or more files via a file explorer from the user's local computer. The JavaFX FileChooser is implemented in the class javafx.stage.FileChooser. In this JavaFX FileChooser tutorial I will show you how to use the JavaFX FileChooser dialog.
