@@ -15,7 +15,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #334756;">
                <children>
-                  <TextArea fx:id="plainTAEN" layoutX="35.0" layoutY="39.0" prefHeight="473.0" prefWidth="412.0" />
+                  <TextArea fx:id="plainTAEN" layoutX="35.0" layoutY="39.0" prefHeight="473.0" prefWidth="412.0" wrapText="true" />
                   <Label layoutX="35.0" layoutY="12.0" text="Plaintext" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
@@ -29,7 +29,7 @@
                   <ComboBox fx:id="keyEN" layoutX="467.0" layoutY="64.0" prefWidth="150.0" promptText="Select key" />
                   <Button contentDisplay="CENTER" layoutX="632.0" layoutY="64.0" mnemonicParsing="false" onAction="#encryptePlainText" prefHeight="26.0" prefWidth="106.0" text="Encrypte" />
                   <Button contentDisplay="CENTER" layoutX="755.0" layoutY="63.0" mnemonicParsing="false" onAction="#encrypteFile" prefHeight="26.0" prefWidth="125.0" text="Encrypte File" />
-                  <TextArea fx:id="cipherTAEN" editable="false" layoutX="467.0" layoutY="133.0" prefHeight="380.0" prefWidth="412.0" />
+                  <TextArea fx:id="cipherTAEN" editable="false" layoutX="467.0" layoutY="133.0" prefHeight="380.0" prefWidth="412.0" wrapText="true" />
                   <Label layoutX="467.0" layoutY="98.0" text="CipherText" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
@@ -42,7 +42,7 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #334756;">
                <children>
-                  <TextArea fx:id="cipherTADE" layoutX="35.0" layoutY="39.0" prefHeight="473.0" prefWidth="412.0" />
+                  <TextArea fx:id="cipherTADE" layoutX="35.0" layoutY="39.0" prefHeight="473.0" prefWidth="412.0" wrapText="true" />
                   <Label layoutX="35.0" layoutY="12.0" text="Ciphertext" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
@@ -56,7 +56,7 @@
                   <ComboBox fx:id="keyDE" layoutX="467.0" layoutY="64.0" prefWidth="150.0" promptText="Select key" />
                   <Button contentDisplay="CENTER" layoutX="632.0" layoutY="64.0" mnemonicParsing="false" onAction="#decrypteCiphertext" prefHeight="26.0" prefWidth="106.0" text="Decrypte" />
                   <Button contentDisplay="CENTER" layoutX="755.0" layoutY="63.0" mnemonicParsing="false" onAction="#decrypteFile" prefHeight="26.0" prefWidth="124.0" text="Decrypte File" />
-                  <TextArea fx:id="plainTADE" editable="false" layoutX="467.0" layoutY="133.0" prefHeight="380.0" prefWidth="412.0" />
+                  <TextArea fx:id="plainTADE" editable="false" layoutX="467.0" layoutY="133.0" prefHeight="380.0" prefWidth="412.0" wrapText="true" />
                   <Label layoutX="467.0" layoutY="98.0" text="Plaintext" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />

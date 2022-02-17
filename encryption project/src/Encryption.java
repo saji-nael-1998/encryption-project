@@ -30,7 +30,6 @@ public class Encryption {
 		String plainText = "";
 
 		String stepOne = hexToBin(cipherText);
-
 		cipherText = stepOne.substring(8, stepOne.length());
 		String keyOfStepTwo = stepOne.substring(0, 8);
 
@@ -107,6 +106,7 @@ public class Encryption {
 	private String encrypte(char input, String key) {
 		// convert input to binary code
 		String binaryCode = optimizeBinary(Integer.toBinaryString((int) input));
+		System.out.println(binaryCode);
 
 		String encryptedString = "";
 		int arr[] = new int[binaryCode.length()];
@@ -117,10 +117,11 @@ public class Encryption {
 		// step 1
 
 		String stepOne = encryptionStepOne(arr, key);
-
+System.out.println("step 1 "+stepOne);
 		// step 2
 
 		String stepTwo = encryptionStepTwo(stepOne);
+		System.out.println("step 1 "+stepTwo);
 
 		// step 3
 		encryptedString = convertBinaryToHex(stepTwo);
@@ -154,6 +155,7 @@ public class Encryption {
 		int result = 8 - sum;
 		// convert to binary
 		String binaryCode = optimizeBinary(Integer.toBinaryString((int) (String.valueOf(result).charAt(0))));
+		System.out.println(binaryCode);
 
 		String value = XORFunction(binaryCode, stepOne);
 
